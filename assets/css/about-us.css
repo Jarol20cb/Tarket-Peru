@@ -1,0 +1,200 @@
+:root {
+  --bondi-blue: #0799b6;
+  --eden: #114c5f;
+  --font-tittle: 'Ubuntu', sans-serif;
+  --font-family: sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* Agrega aquí cualquier otra propiedad que desees aplicar a todos los elementos */
+}
+
+html {
+  scroll-behavior: smooth; 
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+.section-component {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../imgs/Fondo.png);
+  height: 650px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; /* Cambio de posición a relativa */
+}
+
+.section-component .content-wrapper {
+  text-align: center;
+  z-index: 2; /* Ajuste del índice z para que esté encima del fondo */
+}
+
+.section-component h1 {
+  color: var(--eden);
+  font-size: 60px;
+  font-weight: bold;
+  font-family: var(--font-tittle);
+  margin-top: 0; /* Eliminación del margen superior para centrar verticalmente */
+}
+
+.section-component nav {
+  margin-top: 20px;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  font-weight: bold;
+}
+
+.section-component a:hover {
+  color: white;
+}
+
+
+.section-component ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+}
+
+.section-component li {
+  margin-right: 24px;
+}
+
+.section-component a {
+  color: var(--bondi-blue);
+  text-decoration: none;
+  font-size: 25px;
+}
+
+
+/* ABOUT US */
+.about-us {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.image-container {
+  width: 400px;
+  margin-right: 50px;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.content-container {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content-container h2 {
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: var(--bondi-blue);
+}
+
+.content-container p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.card-group {
+  display: flex;
+  justify-content: center;
+  max-width: 1400px;
+  flex-wrap: wrap;
+}
+
+.card {
+  border-radius: 15px;
+  overflow: hidden;
+  margin: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: all .3s;
+  width: 100%;
+  max-width: 250px;
+}
+
+.card:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  transition: all .3s;
+}
+
+.card:hover img {
+  transform: scale(1.1);
+}
+
+.card-info {
+  padding: 10px;
+}
+
+.card-info h3 {
+  margin: 0;
+}
+
+.card-info p {
+  margin-bottom: 5px;
+}
+
+/* Media Query para tablet */
+@media screen and (max-width: 1023px) {
+  .section-component nav {
+    top: 350px; /* Ajuste de la posición superior */
+    transform: none; /* Eliminar la transformación de centrado en pantallas de tablet */
+    left: 0; /* Ajuste de la posición izquierda para centrar horizontalmente */
+    right: 0; /* Ajuste de la posición derecha para centrar horizontalmente */
+    margin: 0 auto; /* Centrar horizontalmente utilizando margen automático */
+  }
+
+  .section-component a{
+    font-size: 20px;
+  }
+}
+
+/* Media Query para celular */
+@media screen and (max-width: 767px) {
+  .section-component nav {
+    top: 400px; /* Ajuste de la posición superior */
+    transform: none; /* Eliminar la transformación de centrado en pantallas de celular */
+    left: 0; /* Ajuste de la posición izquierda para centrar horizontalmente */
+    right: 0; /* Ajuste de la posición derecha para centrar horizontalmente */
+    margin: 0 auto; /* Centrar horizontalmente utilizando margen automático */
+  }
+}
