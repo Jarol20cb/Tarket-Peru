@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="assets/css/whatsapp.css">
     <link rel="stylesheet" href="assets/css/footer.css">
     <link rel="stylesheet" href="assets/css/fondo.css">
+    <link rel="stylesheet" href="assets/css/form-emerg.css">
+    <!-- Iconos font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
     <!-- font icons -->
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
     
@@ -47,12 +51,6 @@
           </div>
         </header>
         
-        
-        
-        
-         
-
-
         <div class="about-us" id="historia">
           <div class="image-container">
             <img src="assets/imgs/img-1.jpg" alt="About Us">
@@ -64,67 +62,204 @@
         </div>
         
     <!-- Componente HTML para sección con filtro de tres personas -->
-<div class="container" id="card">
-    <div class="card-group">
-      <div class="card">
-        <img src="assets/imgs/avatar2.jpg" alt="person1">
-        <div class="card-info">
-          <h3>Nombre1</h3>
-          <p>Cargo1</p>
-          <p>Información adicional1</p>
-        </div>
-      </div>
-      <div class="card">
-        <img src="assets/imgs/avatar2.jpg" alt="person2">
-        <div class="card-info">
-          <h3>Nombre2</h3>
-          <p>Cargo2</p>
-          <p>Información adicional2</p>
-        </div>
-      </div>
-      <div class="card">
-        <img src="assets/imgs/avatar2.jpg" alt="person3">
-        <div class="card-info">
-          <h3>Nombre3</h3>
-          <p>Cargo3</p>
-          <p>Información adicional3</p>
-        </div>
-      </div>
-      <div class="card">
-        <img src="assets/imgs/avatar2.jpg" alt="person3">
-        <div class="card-info">
-          <h3>Nombre3</h3>
-          <p>Cargo3</p>
-          <p>Información adicional3</p>
-        </div>
-      </div>
-      <div class="card">
-        <img src="assets/imgs/avatar2.jpg" alt="person3">
-        <div class="card-info">
-          <h3>Nombre3</h3>
-          <p>Cargo3</p>
-          <p>Información adicional3</p>
-        </div>
-      </div>
-      <div class="card">
-        <img src="assets/imgs/avatar2.jpg" alt="person3">
-        <div class="card-info">
-          <h3>Nombre3</h3>
-          <p>Cargo3</p>
-          <p>Información adicional3</p>
-        </div>
-      </div>
-      <div class="card">
-        <img src="assets/imgs/avatar2.jpg" alt="person3">
-        <div class="card-info">
-          <h3>Nombre3</h3>
-          <p>Cargo3</p>
-          <p>Información adicional3</p>
-        </div>
-      </div>
+    <section>
+      <h1 id="titulo-card">Conoce a nuestro equipo</h1>
+      <div class="container" id="card">
+        <div class="card-group">
 
-    </div>
-  </div>
+          <div class="card">
+            <img id="imgcard" src="assets/imgs/avatar2.jpg" alt="person1">
+            <div class="card-info">
+              <h3>Jarol Smith Cruz Briseño</h3>
+              <p class="description-text">Ingeniero de sistemas de información</p>
+
+              <button class="class-button" id="mostrar-formulario">Saber más</button>
+              <!---------------- Presentacion -------------------->
+              <div id="formulario" class="capa-superpuesta">
+                <div class="contenido-formulario">   
+                  <div class="contenedor">
+                      <h2>¿Quién soy yo?</h2>
+                      <img class="imagen-perfil" src="assets/imgs/avatar2.jpg" alt="Foto de perfil">
+                      <p id="description-text-presentation">¡Hola! Soy Jarol Smith Cruz Briseño, un soy un estudiante de la carrera 
+                        de ingenieria de sistemas de informacion de la UPC, mi rol en el equipo 
+                        es gestionar el desarrollo de las paginas y aplicaciones web.</p>
+                      
+                      <div class="iconos-sociales">
+                        <a href="enlace_a_linkedin"><i class="fab fa-linkedin"></i></a>
+                        <a href="enlace_a_facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="enlace_a_whatsapp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="enlace_a_instagram"><i class="fab fa-instagram"></i></a>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        
+          <div class="card">
+            <img id="imgcard" src="assets/imgs/avatar2.jpg" alt="person2">
+            <div class="card-info">
+              <h3>Jesús Antonio Abal Mori</h3>
+              <p class="description-text">Administración y Marketing</p><br>
+              <button class="class-button"  id="mostrar-formulario-2">Saber más</button>
+              <!---------------- Presentacion -------------------->
+              <div id="formulario-2" class="capa-superpuesta">
+                <div class="contenido-formulario">   
+                  <div class="contenedor">
+                      <h2>¿Quién soy yo?</h2>
+                      <img class="imagen-perfil" src="assets/imgs/avatar2.jpg" alt="Foto de perfil">
+                      <p id="description-text-presentation">¡Hola! Soy [Nombre de la persona2], un [breve descripción sobre ti].</p>
+                      
+                      <div class="iconos-sociales">
+                        <a href="enlace_a_linkedin"><i class="fab fa-linkedin"></i></a>
+                        <a href="enlace_a_facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="enlace_a_whatsapp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="enlace_a_instagram"><i class="fab fa-instagram"></i></a>
+                      </div>
+                    </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="card">
+            <img id="imgcard" src="assets/img-integrantes/fernando.png" alt="person3">
+            <div class="card-info">
+              <h3>Fernando Josué Díaz Silva</h3>
+              <p class="description-text">Ingeniero de Software</p><br>
+              <button class="class-button" id="mostrar-formulario-3">Saber más</button>
+              <!---------------- Presentacion -------------------->
+              <div id="formulario-3" class="capa-superpuesta">
+                <div class="contenido-formulario">   
+                  <div class="contenedor">
+                      <h2>¿Quién soy yo?</h2>
+                      <img class="imagen-perfil" src="assets/imgs/avatar2.jpg" alt="Foto de perfil">
+                      <p id="description-text-presentation">¡Hola! Soy [Nombre de la persona3], un [breve descripción sobre ti].</p>
+                      
+                      <div class="iconos-sociales">
+                        <a href="enlace_a_linkedin"><i class="fab fa-linkedin"></i></a>
+                        <a href="enlace_a_facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="enlace_a_whatsapp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="enlace_a_instagram"><i class="fab fa-instagram"></i></a>
+                      </div>
+                    </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="card">
+            <img id="imgcard" src="assets/imgs/avatar2.jpg" alt="person3">
+            <div class="card-info">
+              <h3>Enrique Antonio De La Cruz Vílchez</h3>
+              <p class="description-text">Administración y Marketing</p>
+              <button class="class-button" id="mostrar-formulario-4">Saber más</button>
+              <!---------------- Presentacion -------------------->
+              <div id="formulario-4" class="capa-superpuesta">
+                <div class="contenido-formulario">   
+                  <div class="contenedor">
+                      <h2>¿Quién soy yo?</h2>
+                      <img class="imagen-perfil" src="assets/imgs/avatar2.jpg" alt="Foto de perfil">
+                      <p id="description-text-presentation">¡Hola! Soy [Nombre de la persona4], un [breve descripción sobre ti].</p>
+                      
+                      <div class="iconos-sociales">
+                        <a href="enlace_a_linkedin"><i class="fab fa-linkedin"></i></a>
+                        <a href="enlace_a_facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="enlace_a_whatsapp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="enlace_a_instagram"><i class="fab fa-instagram"></i></a>
+                      </div>
+                    </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+          <div class="card">
+            <img id="imgcard" src="assets/imgs/avatar2.jpg" alt="person3">
+            <div class="card-info">
+              <h3>Joaquín Marcelo Cortés Casas</h3>
+              <p class="description-text">Ingeniero de Software</p>
+              <button class="class-button" id="mostrar-formulario-5">Saber más</button>
+              <!---------------- Presentacion -------------------->
+              <div id="formulario-5" class="capa-superpuesta">
+                <div class="contenido-formulario">   
+                  <div class="contenedor">
+                      <h2>¿Quién soy yo?</h2>
+                      <img class="imagen-perfil" src="assets/imgs/avatar2.jpg" alt="Foto de perfil">
+                      <p id="description-text-presentation">¡Hola! Soy [Nombre de la persona5], un [breve descripción sobre ti].</p>
+                      
+                      <div class="iconos-sociales">
+                        <a href="enlace_a_linkedin"><i class="fab fa-linkedin"></i></a>
+                        <a href="enlace_a_facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="enlace_a_whatsapp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="enlace_a_instagram"><i class="fab fa-instagram"></i></a>
+                      </div>
+                    </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="card">
+            <img id="imgcard" src="assets/imgs/avatar2.jpg" alt="person3">
+            <div class="card-info">
+              <h3>Nombre6</h3>
+              <p class="description-text">Cargo3</p><br>
+              <button class="class-button" id="mostrar-formulario-6">Saber más</button>
+              <!---------------- Presentacion -------------------->
+              <div id="formulario-6" class="capa-superpuesta">
+                <div class="contenido-formulario">   
+                  <div class="contenedor">
+                      <h2>¿Quién soy yo?</h2>
+                      <img class="imagen-perfil" src="assets/imgs/avatar2.jpg" alt="Foto de perfil">
+                      <p id="description-text-presentation">¡Hola! Soy [Nombre de la persona6], un [breve descripción sobre ti].</p>
+                      
+                      <div class="iconos-sociales">
+                        <a href="enlace_a_linkedin"><i class="fab fa-linkedin"></i></a>
+                        <a href="enlace_a_facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="enlace_a_whatsapp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="enlace_a_instagram"><i class="fab fa-instagram"></i></a>
+                      </div>
+                    </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+          <div class="card">
+            <img id="imgcard" src="assets/imgs/avatar2.jpg" alt="person3">
+            <div class="card-info">
+              <h3>Nombre7</h3>
+              <p class="description-text">Cargo3</p><br>
+              <button class="class-button" id="mostrar-formulario-7">Saber más</button>
+              <!---------------- Presentacion -------------------->
+              <div id="formulario-7" class="capa-superpuesta">
+                <div class="contenido-formulario">   
+                  <div class="contenedor">
+                      <h2>¿Quién soy yo?</h2>
+                      <img class="imagen-perfil" src="assets/imgs/avatar2.jpg" alt="Foto de perfil">
+                      <p id="description-text-presentation">¡Hola! Soy [Nombre de la persona7], un [breve descripción sobre ti].</p>
+                      
+                      <div class="iconos-sociales">
+                        <a href="enlace_a_linkedin"><i class="fab fa-linkedin"></i></a>
+                        <a href="enlace_a_facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="enlace_a_whatsapp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="enlace_a_instagram"><i class="fab fa-instagram"></i></a>
+                      </div>
+                    </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+    
+        </div>
+      </div>
+    </section>
+
+    
+
 
   <!--FOOTER-->
 <!--::::Pie de Pagina::::::-->
@@ -158,6 +293,7 @@
 </footer>
     <!-- Fast js-->
     <script src="assets/js/fast.js"></script>
+    <script src="assets/js/action-form.js"></script>
 </body>
 </html>
 
