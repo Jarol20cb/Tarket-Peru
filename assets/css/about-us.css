@@ -24,6 +24,19 @@ h1 {
   text-align: center;
 }
 
+h3{
+  text-align: center;
+  color: var(--eden);
+}
+.description-text{
+  text-align: center;
+}
+
+#titulo-card{
+  color: var(--bondi-blue);
+  text-align: center;
+  font-size: 40px;
+}
 .section-component {
   display: flex;
   flex-direction: column;
@@ -148,10 +161,10 @@ h1 {
 }
 
 .card:hover {
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 20px var(--bondi-blue);
 }
 
-.card img {
+.card #imgcard {
   width: 100%;
   height: auto;
   transition: all .3s;
@@ -186,6 +199,10 @@ h1 {
   .section-component a{
     font-size: 20px;
   }
+
+  #titulo-card{
+    font-size: 35px;
+  }
 }
 
 /* Media Query para celular */
@@ -196,5 +213,8 @@ h1 {
     left: 0; /* Ajuste de la posición izquierda para centrar horizontalmente */
     right: 0; /* Ajuste de la posición derecha para centrar horizontalmente */
     margin: 0 auto; /* Centrar horizontalmente utilizando margen automático */
+  }
+  #titulo-card{
+    font-size: 30px;
   }
 }
