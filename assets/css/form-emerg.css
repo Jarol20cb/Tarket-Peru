@@ -1,0 +1,207 @@
+:root {
+  --bondi-blue: #0799b6;
+  --eden: #114c5f;
+  --font-tittle: 'Ubuntu', sans-serif;
+  --font-family: sans-serif;
+}
+
+
+/* Formulario de presentacion */
+.capa-superpuesta {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  display: none;
+  z-index: 9999;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.contenido-formulario {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  padding: 40px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  width: 550px;
+
+  max-width: 90%;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.capa-superpuesta.mostrar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+}
+
+.capa-superpuesta.mostrar .contenido-formulario {
+  opacity: 1;
+}
+
+/* Estilo para el contenido */
+.contenedor {
+  text-align: center;
+}
+
+
+.imagen-perfil {
+  border-radius: 50%;
+  width: 40%; /* Ajusta el ancho de la imagen según tus preferencias */
+  height: auto; /* Ajusta la altura de la imagen según tus preferencias */
+  margin: 0 auto 40px;
+  display: block;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.imagen-perfil:hover {
+  transform: scale(1.1) rotate(5deg);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.8);
+}
+
+.imagen-perfil::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.imagen-perfil:hover::after {
+  opacity: 1;
+}
+
+
+
+
+.iconos-sociales {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.iconos-sociales a {
+  margin: 0 15px;
+  color: #333333;
+  font-size: 24px;
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  position: relative;
+}
+
+.iconos-sociales a:hover {
+  color: var(--bondi-blue);
+  transform: scale(1.2);
+}
+
+.iconos-sociales a::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background-color: var(--bondi-blue);
+  transition: width 0.3s ease-in-out;
+}
+
+.iconos-sociales a:hover::before {
+  width: 100%;
+}
+
+
+
+h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  font-family: var(--font-tittle);
+  color: var(--bondi-blue);
+}
+
+#description-text-presentation {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+/*boton*/
+.class-button {
+  cursor: pointer;
+  position: relative;
+  padding: 10px 24px;
+  font-size: 18px;
+  color: var(--bondi-blue);
+  border: 2px solid var(--bondi-blue);
+  border-radius: 34px;
+  background-color: transparent;
+  font-weight: 600;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+  overflow: hidden;
+  margin: 0 auto; /* Para centrar horizontalmente */
+  display: block; /* Para que ocupe el ancho completo del contenedor */
+}
+
+.class-button::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 50px;
+  height: 50px;
+  border-radius: inherit;
+  transform: scale(0);
+  z-index: -1;
+  background-color: var(--bondi-blue);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.class-button:hover::before {
+  transform: scale(3);
+}
+
+.class-button:hover {
+  color: #ffffff;
+  transform: scale(1.1);
+  box-shadow: 0 0px 20px var(--bondi-blue);
+}
+
+.class-button:active {
+  transform: scale(1);
+}
+
+
+
+
+@media (max-width: 600px) {
+  .contenido-formulario {
+    width: 80%;
+    padding: 50px;
+  }
+
+  #description-text-presentation {
+    font-size: 15px;
+    line-height: 1.0;
+    margin-bottom: 20px;
+  }
+}
+
+
+
+
+
+
