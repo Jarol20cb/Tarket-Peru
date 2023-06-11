@@ -1,0 +1,44 @@
+:root {
+    --bondi-blue: #0799b6;
+    --eden: #114c5f;
+    --font-tittle: 'Ubuntu', sans-serif;
+    --font-family: sans-serif;
+  }
+  .header .header-content .header-subtitle {
+    font-size: 30px;
+    letter-spacing: 1px;
+    opacity: 0.8;
+    margin: 0;
+    text-align: center;
+    font-weight: bold; /* Añade esta línea para aplicar negrita (bold) */
+  }
+  
+  .header-subtitle
+  {
+    font-size: 30px;
+    letter-spacing: 1px;
+    opacity: 0.8;
+    margin: 0;
+    text-align: center;
+    font-weight: bold; /* Añade esta línea para aplicar negrita (bold) */
+  }
+  
+  #changingWord {
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--bondi-blue);
+    animation: wordAnimation 2s ease-in-out infinite alternate;
+  }
+  
+  @keyframes wordAnimation {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
