@@ -28,9 +28,24 @@ h3{
   text-align: center;
   color: var(--eden);
 }
+
 .description-text{
   text-align: center;
 }
+
+
+.fade-in-out {
+  opacity: 0;
+  transition: opacity 1s ease-in-out; /* Modifica la duración aquí (1s = 1 segundo) */
+}
+
+.visible {
+  opacity: 1;
+}
+
+
+
+
 
 #titulo-card{
   color: var(--bondi-blue);
@@ -62,15 +77,7 @@ h3{
   margin-top: 0; /* Eliminación del margen superior para centrar verticalmente */
 }
 
-.section-component nav {
-  margin-top: 20px;
-  position: absolute;
-  top: 55%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  font-weight: bold;
-}
+
 
 .section-component a:hover {
   color: white;
@@ -188,13 +195,6 @@ h3{
 
 /* Media Query para tablet */
 @media screen and (max-width: 1023px) {
-  .section-component nav {
-    top: 350px; /* Ajuste de la posición superior */
-    transform: none; /* Eliminar la transformación de centrado en pantallas de tablet */
-    left: 0; /* Ajuste de la posición izquierda para centrar horizontalmente */
-    right: 0; /* Ajuste de la posición derecha para centrar horizontalmente */
-    margin: 0 auto; /* Centrar horizontalmente utilizando margen automático */
-  }
 
   .section-component a{
     font-size: 20px;
@@ -207,14 +207,37 @@ h3{
 
 /* Media Query para celular */
 @media screen and (max-width: 767px) {
-  .section-component nav {
-    top: 400px; /* Ajuste de la posición superior */
-    transform: none; /* Eliminar la transformación de centrado en pantallas de celular */
-    left: 0; /* Ajuste de la posición izquierda para centrar horizontalmente */
-    right: 0; /* Ajuste de la posición derecha para centrar horizontalmente */
-    margin: 0 auto; /* Centrar horizontalmente utilizando margen automático */
-  }
+
   #titulo-card{
     font-size: 30px;
+  }
+}
+
+
+.down {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: floatingAnimation 3s ease-in-out infinite;
+}
+
+.down img {
+  width: 200px; /* Ajusta el tamaño de la imagen según tus necesidades */
+}
+
+
+@keyframes floatingAnimation {
+  0% {
+    transform: translateY(0);
+    filter: hue-rotate(0deg);
+  }
+  50% {
+    transform: translateY(-20px);
+    filter: hue-rotate(180deg);
+  }
+  100% {
+    transform: translateY(0);
+    filter: hue-rotate(360deg);
   }
 }
