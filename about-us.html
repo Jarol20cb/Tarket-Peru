@@ -10,7 +10,11 @@
     <link rel="stylesheet" href="assets/css/fondo.css">
     <link rel="stylesheet" href="assets/css/form-emerg.css">
     <link rel="stylesheet" href="assets/css/carga.css">
+    <link rel="stylesheet" href="assets/css/nav.css">
+    <link rel="stylesheet" href="assets/css/text.css">
+
     <script src="assets/js/carga.js"></script>
+    <script src="assets/js/transition.js"></script>
     <!-- Iconos font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
@@ -21,16 +25,56 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
 <body>
-    
-    <!---------------------------- EFECTO DE CARGA ---------------------------->
+<!---------------------------- EFECTO DE CARGA ---------------------------->
 <div class="custom-spinner"></div>
 
+
+
 <div id="custom-content" style="visibility: hidden; opacity: 0;">
+
+  <!-- Page Navbar -->
+  <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
+    <div class="container-nav">
+      <a class="logo" href="#home">Tarket</a>
+      <ul class="nav">
+        <li class="item">
+          <a class="link" href="javascript:void(0);" onclick="navigateToSection('index.html', '#home')">Home</a>
+        </li>
+        <li class="item">
+          <a class="link" href="javascript:void(0);" onclick="navigateToSection('index.html', '#about')">Sobre Nosotros</a>
+        </li>
+        <li class="item">
+          <a class="link" href="javascript:void(0);" onclick="navigateToSection('index.html', '#portfolio')">Portfolio</a>
+        </li>
+        <li class="item">
+          <a class="link" href="javascript:void(0);" onclick="navigateToSection('index.html', '#testmonial')">Casos de éxito</a>
+        </li>
+        <li class="item">
+          <a class="link" href="javascript:void(0);" onclick="navigateToSection('index.html', '#blog')">Blog</a>
+        </li>
+        <li class="item">
+          <a class="link" href="javascript:void(0);" onclick="navigateToSection('index.html', '#contact')">Contactar</a>
+        </li>
+      </ul>
+      <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
+        <div class="hamburger-box">
+          <div class="hamburger-inner"></div>
+        </div>
+      </a>
+    </div>
+  </nav>
+  
+
+
     <a href="https://api.whatsapp.com/send?phone=51925566082&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20como%20digitalizar%20mi%20negocio." class="float" target="_blank">
         <i class="fa fa-whatsapp my-float"></i>
         </a>
         
         <header class="section-component">
+
+          
+
+
           <ul class="circles">
             <li></li>
             <li></li>
@@ -43,21 +87,28 @@
             <li></li>
             <li></li>
           </ul>
+
+
+
           <div class="header-content container">
             <div class="content-wrapper">
-              <h1 class="header-title">Nuestro Equipo</h1>
-              
-              <nav>
-                <ul>
-                  <li><a href="index.html">Inicio</a></li>
-                  <li><a href="#historia">Conócenos</a></li>
-                  <li><a href="#card">Nuestro Equipo</a></li>
-                </ul>
-              </nav>
+              <!--<h1 class="header-title">Nuestro Equipo</h1>-->
+            </div >
+            <!--<span class="up">Bienvenido!</span>-->
+            <span class="down"><img src="assets/logo/logo.png" alt=""></span>
+            
+
+
             </div>
+
+            <p class="header-subtitle">Con nosotros <span id="changingWord">Creces</span></p>
           </div>
         </header>
+
+
         
+        
+        <div class="fade-in-out">  
         <div class="about-us" id="historia">
           <div class="image-container">
             <img src="assets/imgs/img-1.jpg" alt="About Us">
@@ -67,7 +118,11 @@
             <p>Somos una empresa dedicada a brindar soluciones de tecnología para empresas de todo tipo y tamaño. Contamos con un equipo altamente capacitado en las tecnologías más modernas y estamos comprometidos a ofrecer el mejor servicio posible a nuestros clientes.</p>
           </div>
         </div>
+        </div> 
+
+
         
+        <div class="fade-in-out">  
     <!-- Componente HTML para sección con filtro de tres personas -->
     <section>
       <h1 id="titulo-card">Conoce a nuestro equipo</h1>
@@ -264,10 +319,11 @@
         </div>
       </div>
     </section>
+        </div> 
 
     
 
-
+        <div class="fade-in-out"> 
   <!--FOOTER-->
 <!--::::Pie de Pagina::::::-->
 <footer class="pie-pagina">
@@ -275,8 +331,8 @@
       <div class="box">
           <figure>
               <a href="#home">
-                  <!--<img src="assets/img/services/marketing.png" alt="Logo de SLee Dw">-->
-                  <h1>TARKET</h1>
+                  <img src="assets/logo/loguito.png" alt="Logo de tarket">
+                  
               </a>
           </figure>
       </div>
@@ -298,10 +354,22 @@
       <small>&copy; 2023 <b>TARKET</b> - Todos los Derechos Reservados.</small>
   </div>
 </footer>
-    </div>
+</div>
+</div>  
+
+    <!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- bootstrap 3 affix -->
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script> 
     <!-- Fast js-->
     <script src="assets/js/fast.js"></script>
     <script src="assets/js/action-form.js"></script>
+    <script src="assets/js/meyawo.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+    <script src="assets/js/nav-section-archivo.js"></script>
+    <script src="assets/js/text.js"></script>
 </body>
 </html>
 
