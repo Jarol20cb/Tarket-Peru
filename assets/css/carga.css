@@ -1,0 +1,60 @@
+:root {
+    --bondi-blue: #0799b6;
+    --eden: #114c5f;
+    --font-tittle: 'Ubuntu', sans-serif;
+    --font-family: sans-serif;
+  }
+.custom-spinner {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999; /* Asegura que la animación esté por encima de otros elementos */
+  }
+  
+  .custom-spinner::before,
+  .custom-spinner::after {
+    content: '';
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    border-radius: 50%;
+    mix-blend-mode: multiply;
+    animation: custom-rotate9 1s infinite cubic-bezier(0.77, 0, 0.175, 1);
+  }
+  
+  .custom-spinner::before {
+    background-color: var(--eden);
+  }
+  
+  .custom-spinner::after {
+    background-color: var(--bondi-blue);
+    animation-delay: .5s;
+  }
+  
+  @keyframes custom-rotate9 {
+    0%, 100% {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  
+    25% {
+      transform: translate(-50%, -50%) scale(.3);
+    }
+  
+    50% {
+      left: 0;
+      transform: translate(-50%, -50%);
+    }
+  
+    75% {
+      transform: translate(-50%, -50%) scale(1);
+    }
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
